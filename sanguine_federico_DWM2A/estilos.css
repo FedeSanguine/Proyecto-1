@@ -1,0 +1,419 @@
+
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+}
+h1,
+h2,
+h3 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/* Menu */
+header {
+  background: grey;
+  height: 3em;
+  line-height: 9em;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  background: url("imagenes/logo.jpg") no-repeat center center;
+}
+
+#iconos li {
+  list-style: none;
+  text-indent: -100px;
+  overflow: hidden;
+  margin-top: 0.5em;
+  width: 3em;
+}
+
+#iconos li a {
+  background: url("imagenes/menu.png") no-repeat center center;
+  background-size: cover;
+  display: block;
+  height: 2em;
+}
+
+#iconos li:last-child {
+  display: none;
+}
+
+#botones {
+  width: 100%;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  background: green;
+}
+
+#botones li {
+  list-style: none;
+  margin: 1em;
+}
+
+#botones li a {
+  text-decoration: none;
+  display: block;
+  background: lightgreen;
+  color: black;
+  text-align: center;
+  line-height: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contenido {
+  top: 0;
+  padding-top: 1px;
+  position: relative;
+  z-index: 100;
+  background: white;
+}
+
+nav:target ~ #contenido {
+  top: 16em;
+  transition: top 0.5s ease;
+}
+
+nav:target #iconos li:first-child {
+  display: none;
+}
+
+nav:target #iconos li:last-child {
+  display: block;
+}
+
+/*  Home  */
+h1 {
+  display: none;
+}
+.circulo {
+  text-align: center;
+  font-style: italic;
+  background-color: lightgreen;
+  border-radius: 30%;
+  margin: 1em;
+  padding: 1em;
+}
+img {
+  max-width: 100%;
+}
+
+figure {
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+}
+h2,
+h3 {
+  margin: 1em;
+  text-align: center;
+}
+/* Ladrillos ecologicos */
+#dos {
+  text-align: center;
+}
+
+.parrafo {
+  margin: 1em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.foto2 {
+  display: none;
+}
+
+/*Importancia de uso */
+#tres {
+  background-color: lightgreen;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  grid-gap: 1em;
+}
+
+.contenedor div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Ayuda solidaria */
+.video {
+  width: 80vw;
+  height: calc(90vw * 315 / 560);
+  max-width: 560px;
+  max-height: 315px;
+  background: black;
+  margin: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#cuatro {
+  max-width: 1024px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Contacto */
+form {
+  max-width: 80vh;
+  padding: 1em;
+  margin: auto;
+  background-color:lightgreen;
+}
+.control {
+  display: flex;
+  margin: 0.5em 0;
+  justify-content: center;
+}
+.control:first-child, .control:nth-child(2) {
+  align-items: center;
+}
+
+.control label {
+  flex: 0 100px;
+}
+.control input,
+.control textarea,
+.control select,
+.control > div {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+}
+.control > div {
+  background: white;
+  border: 1px solid #aaa;
+}
+
+.control div div {
+  margin: 0.3em 0;
+}
+
+form > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0 0 0;
+}
+
+input[type="submit"] {
+  padding: .6em 1.3em;
+  background-color: darkgreen;
+  color: white;
+  border: 1px solid #aaa;
+}
+
+input[type="reset"] {
+  padding: .6em 1em;
+  background-color: white;
+  border: 1px solid #aaa;
+  margin-right: .3em;
+}
+
+/* Footer */
+footer {
+  margin-top: 2em;
+  background-color: #606060;
+  text-align: center;
+  padding: 1em;
+  
+}
+
+footer div ul{
+  height: 3em;
+}
+footer div ul li{
+  display: inline-block;
+  list-style: none;
+  padding: .5em;
+}
+
+.redes-sociales ul li:nth-child(1) a{
+  background-image: url(imagenes/instanegro.png);
+  background-repeat: no-repeat;
+  padding: 0px 0px 40px 0px;
+  color: transparent;
+  background-size: 80%;
+}
+
+.redes-sociales ul li:nth-child(2) a{
+  background-image: url(imagenes/facenegro.png);
+  background-repeat: no-repeat;
+  padding: 0px 0px 40px 0px;
+  color: transparent;
+  background-size: 80%;
+}
+
+.redes-sociales ul li:nth-child(3) a{
+  background-image: url(imagenes/youtubenegro.png);
+  background-repeat: no-repeat;
+  padding: 0px 0px 40px 0px;
+  color: transparent;
+  background-size: 98%;
+}
+
+/* Enviado */
+
+.enviado{
+  background-color: lightgreen;
+  border: solid 1px gray;
+  text-align: center;
+  margin: 15em;
+ 
+}
+/*  Tablet */
+
+@media screen and (min-width: 539px) {
+  p{
+    font-size: 1.5em;
+  }
+  h3{font-size: 2em;
+
+  }
+  h2{
+    font-size: 2.3em;
+  }
+  .foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto2 {
+    display: flex;
+    margin-left: 2em;
+    max-width: 100%;
+  }
+
+  #tres {
+    border-radius: 25%;
+   padding: 1em;
+  }
+form{
+  font-size: 1.2em;
+}
+  .contenedor {
+    padding: 3em;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "pastilla1 pastilla1 pastilla2 pastilla2 pastilla3 pastilla3"
+      "pastilla4 pastilla4 pastilla5 pastilla5 pastilla6 pastilla6"
+      ". pastilla7 pastilla7 pastilla8 pastilla8 .";
+  }
+  .contenedor div:first-child {
+    grid-area: pastilla1;
+  }
+
+  .contenedor div:nth-child(2) {
+    grid-area: pastilla2;
+  }
+  .contenedor div:nth-child(3) {
+    grid-area: pastilla3;
+  }
+  .contenedor div:nth-child(4) {
+    grid-area: pastilla4;
+  }
+  .contenedor div:nth-child(5) {
+    grid-area: pastilla5;
+  }
+  .contenedor div:nth-child(6) {
+    grid-area: pastilla6;
+  }
+  .contenedor div:nth-child(7) {
+    grid-area: pastilla7;
+  }
+  .contenedor div:last-child {
+    grid-area: pastilla8;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 1023px) {
+  
+header{
+  height: 4em;
+}
+
+  nav,
+  #contenido{
+    margin: auto;
+}
+
+  #iconos {
+    display: none;
+  }
+ nav{
+ display: flex;
+ position:absolute ;
+ background-position :15em .5em;
+ 
+  }
+  #botones {
+    height: auto;
+    background: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 1em;
+    align-items: flex-end;
+    display: flex;
+    margin-right: 7em;
+  }
+#botones li {
+margin: 0 1em;
+border: 25% solid 1px grey;
+}
+#botones li a {
+ padding: .5em;
+ line-height: 1;
+}
+#botones li a:hover{
+  background-color: darkgreen;
+  transition: 1s;
+color: white;
+}
+#menu {
+    flex: 1;
+    margin-right: 5em;
+    width: 100%;
+}
+
+  
+  .foto2 {
+    display: none;
+  }
+
+  .contenedor {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "pastilla1 pastilla2 pastilla3 pastilla4 "
+      "pastilla5 pastilla6 pastilla7 pastilla8 ";
+  }
+    
+  #dos div p{
+    text-align: left;
+   }
+
+   .tabla{display: flex;}
+}
